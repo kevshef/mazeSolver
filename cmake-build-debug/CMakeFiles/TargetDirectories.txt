@@ -1,0 +1,3 @@
+/Users/kevinshefkiu/Desktop/Università/Lab Di Programmazione/Lab8/cmake-build-debug/CMakeFiles/Lab8.dir
+/Users/kevinshefkiu/Desktop/Università/Lab Di Programmazione/Lab8/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kevinshefkiu/Desktop/Università/Lab Di Programmazione/Lab8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
