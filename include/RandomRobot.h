@@ -10,6 +10,10 @@
 
 class RandomRobot : public Robot {
 
+public:
+     RandomRobot();
+     bool move(Maze& maze) override;
+
 };
 
 

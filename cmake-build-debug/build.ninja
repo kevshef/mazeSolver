@@ -61,12 +61,6 @@ build CMakeFiles/Lab8.dir/src/Maze.cpp.o: CXX_COMPILER__Lab8_unscanned_Debug /Us
   OBJECT_DIR = CMakeFiles/Lab8.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab8.dir/src
 
-build CMakeFiles/Lab8.dir/src/Robot.cpp.o: CXX_COMPILER__Lab8_unscanned_Debug /Users/kevinshefkiu/Desktop/Università/Lab$ Di$ Programmazione/Lab8/src/Robot.cpp || cmake_object_order_depends_target_Lab8
-  DEP_FILE = CMakeFiles/Lab8.dir/src/Robot.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/Lab8.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lab8.dir/src
-
 build CMakeFiles/Lab8.dir/src/RightHandRuleRobot.cpp.o: CXX_COMPILER__Lab8_unscanned_Debug /Users/kevinshefkiu/Desktop/Università/Lab$ Di$ Programmazione/Lab8/src/RightHandRuleRobot.cpp || cmake_object_order_depends_target_Lab8
   DEP_FILE = CMakeFiles/Lab8.dir/src/RightHandRuleRobot.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
@@ -87,7 +81,7 @@ build CMakeFiles/Lab8.dir/src/RandomRobot.cpp.o: CXX_COMPILER__Lab8_unscanned_De
 #############################################
 # Link the executable Lab8
 
-build Lab8: CXX_EXECUTABLE_LINKER__Lab8_Debug CMakeFiles/Lab8.dir/main.cpp.o CMakeFiles/Lab8.dir/src/Maze.cpp.o CMakeFiles/Lab8.dir/src/Robot.cpp.o CMakeFiles/Lab8.dir/src/RightHandRuleRobot.cpp.o CMakeFiles/Lab8.dir/src/RandomRobot.cpp.o
+build Lab8: CXX_EXECUTABLE_LINKER__Lab8_Debug CMakeFiles/Lab8.dir/main.cpp.o CMakeFiles/Lab8.dir/src/Maze.cpp.o CMakeFiles/Lab8.dir/src/RightHandRuleRobot.cpp.o CMakeFiles/Lab8.dir/src/RandomRobot.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   OBJECT_DIR = CMakeFiles/Lab8.dir
   POST_BUILD = :

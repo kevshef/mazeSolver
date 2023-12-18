@@ -32,7 +32,6 @@ Maze::Maze(std::string fileLocation) {
                 _startingColumn = j;
             }
 
-
         }
 
         _matrix.push_back(tempVector);
@@ -47,6 +46,7 @@ std::vector<std::vector<char>> Maze::getMaze(){
     return _matrix;
 }
 
+
 int Maze::getStartingRow() {
     return _startingRow;
 }
@@ -55,54 +55,9 @@ int Maze::getStartingColumn() {
     return _startingColumn;
 }
 
-void Maze::nextMove(int temp, int *row, int *column) {
-
-    try {
-
-        switch (temp) {
-            case 0:
-                if (_matrix[*row - 1][*column] == ' ') {
-                    *row = *row - 1;
-                    _matrix[*row][*column] = '|';
-                }
-
-                break;
-                /** else if (_matrix[*row - 1][*column] == 'E')
-                    std::cout << "hai vinto"; **/
-
-            case 1:
-                if (_matrix[*row + 1][*column] == ' ') {
-                    *row = *row + 1;
-                    _matrix[*row][*column] = '|';
-                }
-                break;
-                /** else if (_matrix[*row + 1][*column] == 'E')
-                std::cout << "hai vinto"; **/
-
-            case 2:
-                if (_matrix[*row][*column - 1] == ' ') {
-                    *column = *column - 1;
-                    _matrix[*row][*column] = '<';
-                }
-                break;
-                /** else if (_matrix[*row][*column - 1] == 'E')
-                    std::cout << "hai vinto"; **/
-            case 3:
-                if (_matrix[*row][*column + 1] == ' ') {
-                    *column = *column + 1;
-                    _matrix[*row][*column] = '>';
-                }
-                break;
-                /**else if (_matrix[*row][*column + 1] == 'E')
-                    std::cout << "hai vinto";**/
-
-        }
-
-    } catch (std::out_of_range& e) {}
-
+void Maze::setMaze(int row, int column, char character) {
+    _matrix[row][column] = character;
 }
-
-
 
 std::ostream &operator<<(std::ostream& os, Maze& maze) {
 

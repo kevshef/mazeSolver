@@ -8,6 +8,16 @@
 #include "Robot.h"
 
 class RightHandRuleRobot : public Robot {
+private:
+
+    enum class orientation {
+        up = 0, down, left, right
+    };
+
+public:
+
+    RightHandRuleRobot();
+    bool move(Maze& maze) override;
 
 };
 

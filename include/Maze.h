@@ -29,7 +29,9 @@ public:
 
     int getStartingColumn();
 
-    void nextMove(int temp, int *row, int *column);
+    bool checkNextMove(int temp, int &row, int &column);
+
+    void setMaze(int row, int column, char character);
 
     friend std::ostream &operator<<(std::ostream &os, Maze& maze);
 

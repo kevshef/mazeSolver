@@ -8,23 +8,20 @@
 #include <iostream>
 #include "Maze.h"
 
-enum class userMove{
-    up = 0, down, left, right
-};
-
 class Robot {
 
-private:
+protected:
 
     int _row;
     int _column;
 
 public:
 
-    Robot();
-    void move(Maze& maze, userMove _userMove);
+    virtual bool move(Maze& maze) = 0;
 
 };
+
+
 
 
 #endif //LAB8_ROBOT_H
